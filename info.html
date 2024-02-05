@@ -34,37 +34,40 @@
                     </div>
                 </nav>
                 <div class="jumbotron">
-                    <h1><img src="images/icon48.png" alt="Kerific logo" class="logo me-5">Kerific options and settings
-                    </h1>
-                    <p>
-                        Options and Settings.
-                    </p>
+                    <h1><img src="images/icon48.png" alt="Kerific logo" class="logo me-5">Kerific info</h1>
+                    <p>Version: <span id="versionNumber">-</span></p>
                     <!-- <p>
                         <a class="btn btn-primary btn-large" href="#">Learn more</a>
                     </p> -->
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12 text-center">
+        <div class="row gx-5">
+            <div class="col-md-12 text-center mb-3">
                 <h2>
-                    Your role
+                    How does it work?
                 </h2>
-                <p>Make a choice:</p>
-                <input type="radio" class="btn-check" name="options" id="set-role-1" value="decisionmaker"
-                    autocomplete="off">
-                <label class="btn btn-secondary" for="set-role-1">Decision maker</label>
+            </div>
+            <div class="col-md-6">
+                <video style="max-width: 100%;" src="video/explainer-1.mp4" controls autoplay loop></video>
+            </div>
+            <div class="col-md-6">
+                <p>This extension loads glossaries related to Key Event Receipt Infrastructure (KERI).</p>
+                <p>It looks for matches in the text of a web page with definitions in the glossaries, and makes them
+                    clickable.</p>
+                <p>Click on the extension icon to see the glossaries that are loaded.</p>
+                <p>Clicking shows a modal in the webpage showing the found definitions, so you can compare.</p>
+                <p>It works on any webpage, but is especially useful for the KERI documentation.</p>
+                <p>It does NOT work on pdf's.</p>
 
-                <input type="radio" class="btn-check" name="options" id="set-role-2" value="normaluser"
-                    autocomplete="off">
-                <label class="btn btn-secondary" for="set-role-2">Normal user</label>
-
-                <div id="liveAlertPlaceholder"></div>
+                <p>Visit <a target="_blank" rel="noopener" href="https://kerisse.org">Kerisse.org</a> for more
+                    information.</p>
             </div>
         </div>
     </div>
 </body>
+<script src="showVersionNumber.js"></script>
+<!-- <script src="assets/index.js"></script> -->
 <script src="js/bootstrap-5.3.2/bootstrap.bundle.min.js"></script>
-<script src="js/options.js"></script>
 
 </html>
